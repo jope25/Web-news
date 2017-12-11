@@ -22,6 +22,7 @@ public class News extends AbstractPersistable<Long> {
     private String title;
     private String lead;
     private String newsText;
+    private int visits;
     private LocalDateTime published;
     @ManyToOne(fetch=FetchType.EAGER)
     @JoinColumn 
