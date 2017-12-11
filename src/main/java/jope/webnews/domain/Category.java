@@ -17,7 +17,7 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 public class Category extends AbstractPersistable<Long> {
 
     private String name;
-    @ManyToMany(mappedBy = "news", fetch=FetchType.LAZY)
+    @ManyToMany(mappedBy = "categories", fetch=FetchType.LAZY)
     private List<News> news;
     
 }

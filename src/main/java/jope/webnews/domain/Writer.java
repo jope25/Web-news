@@ -17,6 +17,6 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 public class Writer extends AbstractPersistable<Long> {
 
     private String name;
-    @ManyToMany(mappedBy = "news", fetch=FetchType.LAZY)
+    @ManyToMany(mappedBy = "writers", fetch=FetchType.LAZY)
     private List<News> news;
 }
